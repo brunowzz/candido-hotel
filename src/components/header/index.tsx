@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="py-10 px-4 mx-auto text-xl flex flex-wrap md:flex-nowrap items-center justify-between">
       <div className="flex items-center w-full md:h-2/3">
         <Link href="/" className="font-black text-tertiary-dark">
-          Hotelzz
+          Cândido Hotel
         </Link>
         <ul className="flex items-center ml-5">
           <li className="flex items-center">
@@ -28,11 +28,11 @@ export const Header = () => {
         </li>
 
         <li className="hover:-translate-y-2 duration-500 transition-all">
-          <Link href="/rooms"> Rooms </Link>
+          <Link href="/rooms"> Quartos </Link>
         </li>
 
         <li className="hover:-translate-y-2 duration-500 transition-all">
-          <Link href="/contact"> Contact </Link>
+          <Link href="/contact"> Contato </Link>
         </li>
       </ul>
     </header>
