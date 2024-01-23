@@ -8,10 +8,10 @@ export default function ThemeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const verifyItem =
-    typeof localStorage !== "undefined" && localStorage.getItem("hotel-theme");
-  const getItem = JSON.parse(localStorage.getItem("hotel-theme")!);
-  const themeFromStorage: boolean = verifyItem ? getItem : false;
+  const themeFromStorage: boolean =
+    typeof localStorage !== "undefined" && localStorage.getItem("hotel-theme")
+      ? JSON.parse(localStorage.getItem("hotel-theme")!)
+      : false;
 
   const [darkTheme, setDarkTheme] = useState<boolean>(themeFromStorage);
   const [renderComponent, setRenderComponent] = useState<boolean>(false);
