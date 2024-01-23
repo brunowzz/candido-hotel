@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import ThemeProvider from "@/components/theme-provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,11 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={poppins.className}>
-        <Header />
-        <main className="font-normal">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <main className="font-normal">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
