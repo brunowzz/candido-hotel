@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-export const Header = () => {
+export default function Header() {
   const { darkTheme, setDarkTheme } = useContext(ThemeContext);
 
   return (
@@ -59,4 +59,4 @@ export const Header = () => {
       </ul>
     </header>
   );
-};
+}
