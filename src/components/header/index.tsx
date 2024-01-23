@@ -10,8 +10,8 @@ export const Header = () => {
   const { darkTheme, setDarkTheme } = useContext(ThemeContext);
 
   return (
-    <header className="mx-auto flex flex-wrap items-center justify-between px-4 py-10 text-xl md:flex-nowrap">
-      <div className="flex w-full items-center md:h-2/3">
+    <header className="container mx-auto flex flex-wrap items-center justify-between px-4 py-10 text-xl md:flex-nowrap">
+      <div className="flex w-full items-center justify-center md:h-2/3 md:w-1/2 md:justify-start">
         <Link href="/" className="font-black text-tertiary-dark">
           Cândido Hotel
         </Link>
@@ -44,7 +44,7 @@ export const Header = () => {
         </ul>
       </div>
 
-      <ul className="md:w-1/ mt-4 flex w-full items-center justify-evenly">
+      <ul className="mt-4 flex w-full items-center justify-evenly md:w-1/2">
         <li className="transition-all duration-500 hover:-translate-y-2">
           <Link href="/"> Home </Link>
         </li>
