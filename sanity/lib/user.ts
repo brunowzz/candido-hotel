@@ -22,6 +22,14 @@ const user = {
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "email",
+      title: "E-mail",
+      type: "string",
+      description: "Email do usuário",
+      readOnly: true,
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "image",
       title: "Foto de perfil",
       type: "url",
@@ -36,6 +44,12 @@ const user = {
       title: "Sobre",
       type: "text",
       description: "Breve descricão do usuário",
+    }),
+    defineField({
+      name: "emailVerified",
+      type: "datetime",
+      title: "Verificação de e-mail",
+      hidden: true,
     }),
   ],
 };
