@@ -1,3 +1,9 @@
+import HeroSection from "@/components/hero-section";
+
 export default function Home() {
-  return <h1>Hotel</h1>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }
